@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="queryType">Type of Query</label>
+            <select id="queryType" name="queryType">
+                <option value="">Select</option>
+                <option value="General">General Inquiry</option>
+                <option value="Order">Order Issue</option>
+                <option value="Feedback">Feedback</option>
+            </select>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+
+            <label for="email">Email-Id</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your Phone no" required>
+
+            <label>Are you a member of OnlineFoodShop?</label>
+            <div class="radio-group">
+                <input type="radio" id="yes" name="membership" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="membership" value="no">
+                <label for="no">No</label>
+            </div>
+
+            <label for="query">Elaborate your query</label>
+            <textarea id="query" name="query" rows="5" placeholder="Enter your query"></textarea>
+
+            <div class="button-group">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
